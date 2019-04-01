@@ -845,6 +845,11 @@ a:hover, a:active {
 	        justify-content: space-between;
 }
 
+.site-header .site-branding {
+	width: 100%;
+	max-width: 500px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
