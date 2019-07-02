@@ -1,0 +1,17 @@
+#masthead {
+  background-color: blue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+
+  .site-branding {
+    display: flex;
+    max-width: 30%;
+  }
+}
+
+#site-navigation {
+  display: flex;
+  max-width: 60%;
+}
