@@ -27,3 +27,10 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
+
+// Compartment for container max width
+@mixin compartment($value: ($boundry * 1px)) {
+  position: relative;
+  margin: 0 auto;
+  max-width: $value;
+}
