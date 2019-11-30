@@ -53,6 +53,12 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+  </header><!-- #masthead -->
+  
+  <?php if (is_front_page()) { ?>
+    <div class="hero-treatment">
+      <h1 class="page-title">Welcome to my awesome homepage</h1>
+    </div>
+  <?php } ?>
 
 	<div id="content" class="site-content">
