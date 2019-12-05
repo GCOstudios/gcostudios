@@ -29,7 +29,7 @@
 }
 
 // Compartment for container max width
-@mixin compartment($value: ($boundry * 1px)) {
+@mixin compartment($value: ($boundary * 1px)) {
   position: relative;
   margin: 0 auto;
   max-width: $value;
