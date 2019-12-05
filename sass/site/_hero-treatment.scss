@@ -1,0 +1,14 @@
+.hero-treatment {
+  background-color: #f9f9f9;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.hero-inner {
+  @include compartment;
+  margin-bottom: 8rem;
+  width: 100%;
+}
