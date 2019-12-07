@@ -28,9 +28,72 @@
 	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
 
-// Compartment for container max width
+// ================================
+// Calculate rem sizes
+// ================================
+
+@function cre($target, $context: 16) {
+  @return calc-rem-size($target, $context)
+}
+
+@function calc-rem-size($target, $context: 16) {
+  $strip-target: su($target);
+  $strip-context: su($context);
+  @return ($strip-target / $strip-context) * 1rem;
+}
+
+// ================================
+// Strip Units
+// ================================
+
+// Strip the units from a value:
+// css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing
+
+@function su($num) {
+  @return strip-unit($num);
+}
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+// ================================
+// Compartment max width
+// ================================
 @mixin compartment($value: ($boundary * 1px)) {
   position: relative;
   margin: 0 auto;
   max-width: $value;
+}
+
+.container {
+  @include compartment;
+}
+
+// ================================
+// List Reset
+// ================================
+
+// Example usage:
+// nav {
+//   @include list-reset;
+// }
+// nav ul {
+//   @include list-reset;
+// }
+// ul { @include list-rest}
+
+@mixin list-reset {
+
+  &, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+    li {
+       margin: 0;
+       padding: 0;
+    }
+
 }
