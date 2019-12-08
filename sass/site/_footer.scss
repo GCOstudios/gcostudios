@@ -1,4 +1,11 @@
 #colophon {
+  font-size: cre(14px);
+  background-color: $color__section-tertiary;
+  color: white;
   padding: cre(20px) 0;
   text-align: center;
+
+  a {
+    color: white;
+  }
 }
