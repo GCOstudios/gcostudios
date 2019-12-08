@@ -15,6 +15,18 @@
       <p>Hello World</p>
     </div>
   </section>
+  <section class="section-work">
+    <div class="container">
+      <h2>Our Work</h2>
+      <p>Hello World</p>
+    </div>
+  </section>
+  <section class="section-blog">
+    <div class="container">
+      <h2>Blog</h2>
+      <p>Hello World</p>
+    </div>
+  </section>
 </main>
 
 <?php get_footer();
