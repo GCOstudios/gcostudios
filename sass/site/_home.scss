@@ -1,0 +1,21 @@
+.home {
+
+  .section-creative,
+  .section-work,
+  .section-blog {
+    padding: cre(80px) 0;
+  }
+
+  // Section Creative
+
+  // Section Our Work
+  .section-work {
+    background-color: $color__section-primary;
+  }
+
+  .section-blog {
+    background-color: $color__section-secondary;
+  }
+
+  // Section Our Blog
+}
