@@ -11,7 +11,7 @@
   </section>
   <section class="section-creative">
     <div class="container">
-      <h2>Creative</h2>
+      <h2>What we do and how we can help you</h2>
       <p>Hello World</p>
     </div>
   </section>
