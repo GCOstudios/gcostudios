@@ -1,1 +1,0 @@
-!function(){"use strict";console.log("Script is loaded")}(window,document);
